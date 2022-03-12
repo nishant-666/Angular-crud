@@ -1,4 +1,4 @@
-<form #loginForm="ngForm" (ngSubmit)="delete()">
+<form #loginForm="ngForm" (ngSubmit)="submitData(loginForm.value)">
   <div class="main">
     <div class="input-fields">
       <input name="name" ngModel placeholder="Name" id="name" type="text" class="input-field" />
@@ -6,6 +6,6 @@
     <div class="input-fields">
       <input name="age" ngModel placeholder="Age" id="age" type="number" class="input-field" />
     </div>
-    <button>Delete Data </button>
+    <button>Add Data </button>
   </div>
 </form>
